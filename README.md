@@ -38,9 +38,11 @@ You have to register this git hook for every repo separately:
 ```sh
 cd /path/to/some/repo
 
-# create a symlink to the script (or copy paste it, if you prefer)
+# create a symlinks to the script and .env file (or copy paste them, if you prefer)
 ln -s </path/to/co-authored-by-git-hook>/replace-co-author-refs.sh .git/hooks/
 
+ln -s </path/to/co-authored-by-git-hook>/co-authors.env .git/hooks/
+
 # register the script as a 'prepare-commit-msg' git hook
-echo -e "\n.git/hooks/replace-co-author-refs.sh" >> .git/hooks/prepare-commit-msg
+echo -e '\n.git/hooks/replace-co-author-refs.sh "$@"' >> .git/hooks/prepare-commit-msg
 ```

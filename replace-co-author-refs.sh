@@ -5,7 +5,7 @@ commit_message_file=$1
 commit_message=$(cat "$commit_message_file")
 
 # Path to the file containing the mappings from name to email addresse
-source ./co-authos.env
+source .git/hooks/co-authors.env
 
 # regex to match [[name]]
 pattern="\[\[(\S+?)\]\]"
