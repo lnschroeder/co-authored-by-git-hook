@@ -23,9 +23,6 @@ git clone ...
 
 cd /path/to/co-authored-by-git-hook
 
-# make the script executable
-chmod +x replace-co-author-refs.sh
-
 # create a file `co-authors.env`
 touch co-authors.env
 ```
