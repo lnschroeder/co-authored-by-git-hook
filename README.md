@@ -39,6 +39,7 @@ You have to register this git hook for every repo separately:
 cd /path/to/some/repo
 
 # create a symlinks to the script and .env file (or copy paste them, if you prefer)
+# NOTE: use absolute paths here
 ln -s </path/to/co-authored-by-git-hook>/replace-co-author-refs.sh .git/hooks/
 
 ln -s </path/to/co-authored-by-git-hook>/co-authors.env .git/hooks/
